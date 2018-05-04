@@ -1,0 +1,17 @@
+{
+  "name": "planx-semantic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd semantic && gulp build-css build-assets",
+    "build:watch": "yarn build && gulp watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "semantic-ui": "^2.3.1"
+  }
+}
