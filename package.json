@@ -1,15 +1,12 @@
 {
   "name": "planx-semantic",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "cd semantic && gulp build-css build-assets",
-    "build:watch": "yarn build && gulp watch"
+    "build:watch": "yarn build && gulp watch",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d semantic/dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
